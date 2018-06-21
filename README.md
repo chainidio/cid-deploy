@@ -1,14 +1,14 @@
-![ARK-DESKTOP](https://user-images.githubusercontent.com/8069294/35097070-78c0dc40-fc46-11e7-9bb0-ad36f7182f39.png)
+![CID-DESKTOP]()
 
 ## Prerequisites
 
-- Because the ARK Node is recommended to be run on Ubuntu 16 (see the [node guide](https://blog.cid.io/how-to-setup-a-node-for-cid-and-a-basic-cheat-sheet-4f82910719da)), we recommend that the deploy is only run on Ubuntu 16 also.
+- Because the CID Node is recommended to be run on Ubuntu 16 (see the [node guide](https://chainid.io)), we recommend that the deploy is only run on Ubuntu 16 also.
 - User running the deploy commands must be a sudoer
 
 ## Installation
 
 ```bash
-git clone https://github.com/ArkEcosystem/cid-deploy.git && cd cid-deploy
+git clone https://github.com/chainidio/cid-deploy.git && cd cid-deploy
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 source ~/.profile
 nvm install 8.9.1
@@ -17,7 +17,7 @@ sudo apt-get update && sudo apt-get install -y jq
 
 ## Detailed Guide
 
-Follow this [full guide](https://blog.cid.io/cid-deploy-setup-guide-c10825ebb0e4) to get the best out of your Bridgechain.
+Follow this [full guide](https://develop.chainid.io) to get the best out of your Bridgechain.
 
 ## Quick setup with Vagrant
 Deploy a chainid and explorer within its own Vagrant setup. This requires vagrant version 2 and up.
@@ -25,7 +25,7 @@ Deploy a chainid and explorer within its own Vagrant setup. This requires vagran
 1. Install Vagrant on your local computer
 2. Clone the cid-deploy from our repository
 ```bash
-$> git clone https://github.com/ArkEcosystem/cid-deploy.git && cd cid-deploy
+$> git clone https://github.com/chainidio/cid-deploy.git && cd cid-deploy
 ```
 3. Run the vagrant command
 ```bash
@@ -66,8 +66,8 @@ Explorer (port forwarded): `http://127.0.0.1:14200/`
     --transactions-per-block - Max Transaction count per Block [50]
     --reward-height-start - Block Height when Forgers receive Rewards [75600]
     --reward-per-block - How many Rewarded Tokens per Forged Block [200000000 (2)]
-    --total-premine - How many tokens initially added to genesis account [210000000000000000 (21 million)]
-    --max-tokens-per-account - Max amount of tokens per account [12500000000000000 (125 million)]
+    --total-premine - How many tokens initially added to genesis account [210000000000000000 (210 million)]
+    --max-tokens-per-account - Max amount of tokens per account [12500000000000000 (1.250 million)]
     --config - Path to JSON config file for install options (see below section for more information)
     --autoinstall-deps - Automatically install dependencies without prompt
     --skip-deps - Skips check for installing dependencies
@@ -123,12 +123,6 @@ To use a config file during an install, simply use the `--config` argument. For 
 ./chainid.sh install-node --config /path/to/config.json
 ```
 
-## Credits
-
-- [Alex Barnsley](https://github.com/alexbarnsley)
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../contributors)
-
 ## License
 
-ARK Deploy is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
+CID Deploy is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.

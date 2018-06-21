@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Ark.io, Alex Barnsley <alex@cid.io>, Brian Faust <brian@cid.io>
+Copyright (c) 2017-2018 Chainid.io, ChainID Platform <dev@cid.io>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
