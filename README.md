@@ -1,4 +1,4 @@
-![CID-DESKTOP]()
+![CID-DESKTOP](https://raw.githubusercontent.com/chainidio/cid-deploy/master/whitepaper.png)
 
 ## Prerequisites
 
