@@ -1,0 +1,12 @@
+- type: parallel
+  name: cid_parallel_step
+  steps:
+    - service: cid-deploy
+      command: printenv
+    - service: cid-deploy
+      # shell wrapper not required unless passing along env vars or combining commands
+      command: /bin/bash -c 'ls && echo ${CI_BUILD_ID}'
+- name: cid_tagged_step
+  tag: master
+  service: cid-deploy
+  command: echo "Deploy here!"
