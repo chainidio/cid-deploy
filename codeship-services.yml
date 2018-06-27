@@ -1,0 +1,6 @@
+cid-deploy:
+  build:
+    image: cid-deploy
+    dockerfile: Dockerfile
+  environment:
+    EXAMPLE_ENV_VAR: cid-var
