@@ -10,3 +10,29 @@
   tag: master
   service: codeship_example
   command: echo "Deploy here!"
+  ---
+  - 
+    name: "step-1"
+    service: "cid"
+    command: "sudo apt-get update && sudo apt-get install -y jq"
+    tag: "master"
+  - 
+    name: "step-2"
+    service: "cid"
+    command: "./chainid.sh install-node --config config.json"
+    tag: "master"
+  - 
+    name: "step-3"
+    service: "cid"
+    command: "./chainid.sh start-node --name chainid"
+    tag: "master"
+  - 
+    name: "install-explorer"
+    service: "cid"
+    command: "./chainid.sh install-explorer --name MyTest --token chainid --explorer-ip 127.0.0.1 --node-ip 127.0.0.1"
+    tag: "master"
+  - 
+    name: "testexplorer"
+    service: "cid"
+    command: "./chainid.sh start-explorer"
+    tag: "master"
