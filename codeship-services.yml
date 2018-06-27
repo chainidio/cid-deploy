@@ -1,6 +1,6 @@
-cid-deploy:
+codeship_example:
   build:
-    image: cid-deploy
+    image: codeship_example
     dockerfile: Dockerfile
   environment:
-    EXAMPLE_ENV_VAR: cid-var
+    EXAMPLE_ENV_VAR: example-var
